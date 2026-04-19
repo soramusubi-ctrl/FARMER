@@ -49,3 +49,12 @@ Vercel 上では `/index` 形式ではなくクリーンURLで確認できます
 - 公式LINE: `https://line.me/R/ti/p/@koriyama`
 
 公開前に正式URLへ置き換えてください。
+
+## マージ要件向けチェック
+
+PR の必須チェック用に GitHub Actions (`.github/workflows/static-site-check.yml`) を追加しています。
+ローカルでも同じ確認を実行できます。
+
+```bash
+./scripts/check_site.sh
+```

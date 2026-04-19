@@ -1,0 +1,17 @@
+name: Static Site Check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+      - work
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify static pages are reachable
+        run: ./scripts/check_site.sh
