@@ -2,11 +2,12 @@
 
 猪苗代湖と磐梯山を望む、郡山市湖南町の観光案内を想定した静的サイトです。
 
-## ページ構成
+## ファイル構成
 
-- `index.html` トップページ（観光ガイド）
-- `farmers.html` / `steps.html` / `news.html` / `contact.html` 既存のサブページ
+- `index.html` トップページ（観光ガイド本体）
 - `styles.css` 共通スタイル
+- `script.js` 画像アセット定義・ナビactive切替
+- `assets/images/*.svg` 差し替え前提の公開用プレースホルダー画像
 - `vercel.json` Vercel向け設定
 
 ## ローカル確認
@@ -21,22 +22,18 @@ python3 -m http.server 8000
 
 このリポジトリはビルド不要の静的配信としてデプロイできます。
 
-### 1) GitHub連携でデプロイ（推奨）
-
 1. Vercel Dashboard で **Add New Project** を選択
 2. このリポジトリを Import
 3. Framework Preset は **Other**（または自動検出）
-4. Build Command は空欄、Output Directory も空欄のままでデプロイ
+4. Build Command / Output Directory は空欄のままでデプロイ
 
-### 2) CLIでデプロイ
+## コンテンツ運用メモ
 
-```bash
-npm i -g vercel
-vercel
-vercel --prod
-```
+- 画像URLは `script.js` の `IMAGE_ASSETS` に集約しています。将来自前写真に差し替える場合はここだけ更新してください。
+- 地図エリアは `index.html` の `.map-placeholder` を Google マップ埋め込みへ置き換える設計です。
+- 湖南七浜の名称は郡山市観光協会の「猪苗代湖畔・湖南七浜」案内に合わせています。
 
-## 補足
 
-- `vercel.json` で `cleanUrls` とセキュリティヘッダを設定しています。
-- トップページの画像はプロトタイプとして外部画像URLを使用しています。運用時は自前アセットへ差し替えを推奨します。
+## マージ競合対応
+
+- `README.md` / `index.html` / `styles.css` の競合解消後、内容を再確認して整合性を取り直しました。
