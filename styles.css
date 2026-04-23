@@ -85,7 +85,7 @@ body {
   border-radius: 999px;
 }
 
-.top-nav a.active,
+.top-nav a.is-active,
 .top-nav a:hover {
   background: var(--blue-soft);
   color: var(--blue);
@@ -208,26 +208,7 @@ h2 {
   overflow: hidden;
 }
 
-.map-placeholder code {
-  background: #fff;
-  border: 1px solid #c2d7ea;
-  border-radius: 8px;
-  padding: 4px 8px;
-}
 
-.pin {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #1f80d0;
-  border: 3px solid #fff;
-  position: absolute;
-}
-
-.p1 { top: 22%; left: 22%; }
-.p2 { top: 57%; left: 36%; }
-.p3 { top: 66%; left: 18%; }
-.p4 { top: 26%; left: 66%; background: #2da489; }
 
 .ghost-btn,
 .solid-btn {

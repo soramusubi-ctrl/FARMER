@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'>
+  <rect width='1200' height='800' fill='#8ed0ff'/>
+  <rect y='420' width='1200' height='380' fill='#f3d04f'/>
+  <circle cx='220' cy='520' r='70' fill='#e18d29'/><circle cx='220' cy='520' r='38' fill='#5b3a1c'/>
+  <circle cx='430' cy='560' r='75' fill='#e18d29'/><circle cx='430' cy='560' r='40' fill='#5b3a1c'/>
+  <text x='60' y='110' fill='#173a5e' font-size='54' font-family='sans-serif' font-weight='700'>布引高原イメージ（差し替え可）</text>
+</svg>

@@ -1,10 +1,8 @@
 const IMAGE_ASSETS = {
-  hero: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80",
-  sunflower:
-    "https://images.unsplash.com/photo-1474511016485-53594a9b44a0?auto=format&fit=crop&w=900&q=80",
-  lakeMountain:
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80",
-  swan: "https://images.unsplash.com/photo-1437623889155-075d40e2e59f?auto=format&fit=crop&w=900&q=80"
+  hero: "assets/images/hero-konan.svg",
+  sunflower: "assets/images/spot-sunflower.svg",
+  lakeMountain: "assets/images/spot-lake.svg",
+  swan: "assets/images/spot-swan.svg"
 };
 
 function hydrateImages() {
@@ -20,4 +18,34 @@ function hydrateImages() {
   });
 }
 
+function setupScrollSpy() {
+  const links = [...document.querySelectorAll('.top-nav a[href^="#"]')];
+  const sectionMap = new Map();
+
+  links.forEach((link) => {
+    const id = link.getAttribute("href").slice(1);
+    const section = document.getElementById(id);
+    if (section) sectionMap.set(section, link);
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (!visible) return;
+
+      links.forEach((link) => link.classList.remove("is-active"));
+      const activeLink = sectionMap.get(visible.target);
+      if (activeLink) activeLink.classList.add("is-active");
+    },
+    { rootMargin: "-45% 0px -45% 0px", threshold: [0.1, 0.4, 0.7] }
+  );
+
+  sectionMap.forEach((_link, section) => observer.observe(section));
+  links[0]?.classList.add("is-active");
+}
+
 hydrateImages();
+setupScrollSpy();

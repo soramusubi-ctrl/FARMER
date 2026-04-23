@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'>
+  <rect width='1200' height='800' fill='#bfe2ff'/>
+  <path d='M150 430 L420 170 L650 430 Z' fill='#4d75a8'/>
+  <path d='M530 430 L870 180 L1110 430 Z' fill='#3d6597'/>
+  <rect y='430' width='1200' height='370' fill='#4a9add'/>
+  <text x='60' y='110' fill='#173a5e' font-size='54' font-family='sans-serif' font-weight='700'>湖越しの磐梯山イメージ（差し替え可）</text>
+</svg>
