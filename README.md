@@ -32,3 +32,8 @@ python3 -m http.server 8000
 - 画像URLは `script.js` の `IMAGE_ASSETS` に集約しています。将来自前写真に差し替える場合はここだけ更新してください。
 - 地図エリアは `index.html` の `.map-placeholder` を Google マップ埋め込みへ置き換える設計です。
 - 湖南七浜の名称は郡山市観光協会の「猪苗代湖畔・湖南七浜」案内に合わせています。
+
+
+## マージ競合対応
+
+- `README.md` / `index.html` / `styles.css` の競合解消後、内容を再確認して整合性を取り直しました。
