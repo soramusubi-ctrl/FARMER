@@ -3,68 +3,233 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>郡山市版 就農入口サイト</title>
+    <title>湖南町観光ガイド</title>
     <meta
       name="description"
-      content="郡山市で就農を考え始めた人が、農家の姿・就農までの流れ・最新情報の受け取り先を迷わず把握できる入口サイトです。"
+      content="猪苗代湖と磐梯山を望む、郡山市湖南町の実用観光ガイド。湖南七浜、トイレ・駐車場、映えスポット、泊まる・温泉、モデルコースを掲載。"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" href="index.html">郡山市版 就農入口サイト</a>
-        <nav class="nav" aria-label="主要ナビゲーション">
-          <a href="farmers.html">農家さんを知る</a>
-          <a href="steps.html">就農ステップ</a>
-          <a href="news.html">最新情報</a>
-          <a href="contact.html">相談先</a>
+        <a class="site-logo" href="#top">
+          <span class="logo-mark">🗻</span>
+          <span>
+            <strong>湖南町観光ガイド</strong>
+            <small>猪苗代湖の南へ</small>
+          </span>
+        </a>
+        <nav class="top-nav" aria-label="主要ナビゲーション">
+          <a class="active" href="#top">トップ</a>
+          <a href="#photo-spots">映えスポット</a>
+          <a href="#landmarks">観光名所</a>
+          <a href="#konan-beaches">湖南七浜</a>
+          <a href="#eat">食べる</a>
+          <a href="#shopping">買う</a>
+          <a href="#toilet-parking">トイレ・駐車場</a>
+          <a href="#events">季節の行事</a>
+          <a href="#stay-onsen">泊まる・温泉</a>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="top">
       <section class="hero">
-        <div class="container hero-box">
-          <h1>郡山市で、農業を考えはじめた人へ</h1>
-          <p>
-            「どんな農家さんがいるの？」「何から始めればいいの？」「最新情報はどこで見るの？」
-            を迷わずたどれる、郡山市の就農入口サイトです。
-          </p>
-          <div class="cta-row">
-            <a class="button primary" href="farmers.html">郡山市ではどんな農家さんがいるの？</a>
-            <a class="button" href="steps.html">就農ステップを見る</a>
-            <a class="button" href="news.html">最新情報を受け取る</a>
-          </div>
+        <div class="hero-overlay">
+          <p class="hero-kicker">湖の南へ。</p>
+          <h1>湖南町ガイド</h1>
+          <p class="hero-copy">猪苗代湖と磐梯山を望む、郡山市湖南町の観光案内</p>
+          <div class="hero-badge">ふくしま<br />郡山市<br />湖南町</div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <h2>このサイトの役割</h2>
-          <p class="notice">
-            このサイトは「入口と案内」に特化しています。詳細情報は外部の公式導線へつなぎ、運営負荷を抑えながら必要な情報に最短で届く構成にしています。
+      <section class="section container info-grid" id="where">
+        <article class="panel about">
+          <h2>📍 湖南町はどこ？</h2>
+          <p>
+            福島県郡山市の西側、猪苗代湖の南岸にある町です。湖越しに磐梯山を望む自然に囲まれ、湖南七浜や布引高原など、四季を通じて楽しめるスポットが点在しています。
           </p>
-          <div class="card-grid">
-            <article class="card">
-              <h3>人の魅力を知る</h3>
-              <p>郡山市の農家の姿は、フロンティアファーマーズの紹介ページへつないで案内します。</p>
-            </article>
-            <article class="card">
-              <h3>流れをつかむ</h3>
-              <p>就農の全体像をわかりやすく提示し、詳細は就農ナビアプリへ遷移します。</p>
-            </article>
-            <article class="card">
-              <h3>最新情報を受け取る</h3>
-              <p>新着や募集情報は、郡山市農政課公式LINEで受け取れるようにします。</p>
-            </article>
+          <div class="facts">
+            <div class="fact">🚗 郡山市街から車で約40分</div>
+            <div class="fact">♨ 磐梯熱海温泉から車で約15分</div>
+            <div class="fact">🗻 湖畔沿いの観光拠点が充実</div>
           </div>
+        </article>
+        <article class="panel map">
+          <h3>地図で見る湖南町</h3>
+          <div class="map-placeholder" role="img" aria-label="仮の地図表示。将来Googleマップ埋め込み予定">
+            <p>このエリアは現在プレースホルダーです。</p>
+            <p><strong>将来：</strong>Googleマップ埋め込みに置き換え予定</p>
+            <code>&lt;iframe src="...google map embed..."&gt;&lt;/iframe&gt;</code>
+            <div class="pin p1"></div>
+            <div class="pin p2"></div>
+            <div class="pin p3"></div>
+            <div class="pin p4"></div>
+          </div>
+          <a class="ghost-btn" href="#">大きな地図で見る（準備中）</a>
+        </article>
+      </section>
+
+      <section id="categories" class="section container">
+        <h2>⭐ おすすめカテゴリ</h2>
+        <div class="category-grid">
+          <article class="category-card"><h3>📷 映えスポット</h3><p>湖・山・空がそろう写真映えエリア</p></article>
+          <article class="category-card"><h3>⛩ 観光名所</h3><p>自然・文化・歴史にふれる定番巡り</p></article>
+          <article class="category-card"><h3>🌊 湖南七浜</h3><p>7つの浜それぞれの見どころを紹介</p></article>
+          <article class="category-card"><h3>🍽 食べる</h3><p>地元グルメやおすすめのお店</p></article>
+          <article class="category-card"><h3>👜 買う</h3><p>直売所・お土産・地域特産</p></article>
+          <article class="category-card"><h3>🚻 トイレ・駐車場</h3><p>移動前に場所と設備をチェック</p></article>
+          <article class="category-card"><h3>📅 季節の行事</h3><p>四季のイベント・体験情報</p></article>
+          <article class="category-card"><h3>♨ 泊まる・温泉</h3><p>宿泊・日帰り入浴の計画に</p></article>
         </div>
+      </section>
+
+      <section class="section container" id="photo-spots">
+        <h2>📷 映えスポット（詳細）</h2>
+        <div class="spot-grid">
+          <article class="panel spot-card">
+            <img data-image-key="sunflower" alt="布引高原のひまわり" />
+            <h3>布引高原（風車とひまわり）</h3>
+            <p>高原から見渡す風車群と季節の花畑。夕景も人気です。</p>
+            <ul>
+              <li>おすすめ季節：夏〜秋</li>
+              <li>アクセス：車推奨</li>
+              <li>注意点：天候急変に注意</li>
+            </ul>
+          </article>
+          <article class="panel spot-card">
+            <img data-image-key="lakeMountain" alt="湖越しの磐梯山" />
+            <h3>湖越しの磐梯山ビューポイント</h3>
+            <p>猪苗代湖と山並みの定番構図。朝・夕の光で表情が変わります。</p>
+            <ul>
+              <li>おすすめ季節：通年</li>
+              <li>撮影時間：早朝/夕方</li>
+              <li>注意点：路肩駐車は避ける</li>
+            </ul>
+          </article>
+          <article class="panel spot-card">
+            <img data-image-key="swan" alt="白鳥と湖" />
+            <h3>白鳥飛来地（冬季）</h3>
+            <p>冬に白鳥が見られる人気エリア。望遠レンズがあると便利です。</p>
+            <ul>
+              <li>おすすめ季節：冬</li>
+              <li>マナー：餌やりルール要確認</li>
+              <li>注意点：足元凍結に注意</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="landmarks">
+        <h2>⛩ 観光名所</h2>
+        <div class="simple-grid">
+          <article class="panel"><h3>布引高原</h3><p>風車群と季節の花々が楽しめる高原エリア。</p></article>
+          <article class="panel"><h3>湖南七浜</h3><p>湖岸沿いに続く個性ある7つの浜。</p></article>
+          <article class="panel"><h3>湖畔の田園風景</h3><p>猪苗代湖と田園が重なる湖南町ならではの眺め。</p></article>
+        </div>
+      </section>
+
+      <section class="section container" id="konan-beaches">
+        <h2>🌊 湖南七浜（詳細ガイド）</h2>
+        <p class="section-note">未確認情報は <strong>要確認</strong> と明記しています。現地訪問前に最新情報をご確認ください。</p>
+        <div class="beach-grid">
+          <article class="panel beach-card"><h3>1. 横沢浜</h3><dl><dt>見どころ</dt><dd>静かな湖面と朝の景色</dd><dt>おすすめ季節</dt><dd>春・夏</dd><dt>駐車場</dt><dd>要確認</dd><dt>トイレ</dt><dd>要確認</dd><dt>注意点</dt><dd>早朝は霧が出る場合あり</dd></dl></article>
+          <article class="panel beach-card"><h3>2. 舟津浜</h3><dl><dt>見どころ</dt><dd>遠浅で散策しやすい湖岸</dd><dt>おすすめ季節</dt><dd>夏</dd><dt>駐車場</dt><dd>あり（台数 要確認）</dd><dt>トイレ</dt><dd>あり（場所 要確認）</dd><dt>注意点</dt><dd>繁忙期は混雑</dd></dl></article>
+          <article class="panel beach-card"><h3>3. 舘浜</h3><dl><dt>見どころ</dt><dd>磐梯山の見晴らしが良い</dd><dt>おすすめ季節</dt><dd>秋</dd><dt>駐車場</dt><dd>要確認</dd><dt>トイレ</dt><dd>要確認</dd><dt>注意点</dt><dd>風が強い日あり</dd></dl></article>
+          <article class="panel beach-card"><h3>4. 青松浜</h3><dl><dt>見どころ</dt><dd>松並木と湖岸のコントラスト</dd><dt>おすすめ季節</dt><dd>春・秋</dd><dt>駐車場</dt><dd>あり（要確認）</dd><dt>トイレ</dt><dd>要確認</dd><dt>注意点</dt><dd>夕方は足元が暗くなる</dd></dl></article>
+          <article class="panel beach-card"><h3>5. 崎浜</h3><dl><dt>見どころ</dt><dd>波音が穏やかな穴場スポット</dd><dt>おすすめ季節</dt><dd>夏・秋</dd><dt>駐車場</dt><dd>要確認</dd><dt>トイレ</dt><dd>要確認</dd><dt>注意点</dt><dd>案内表示が少ないため事前確認推奨</dd></dl></article>
+          <article class="panel beach-card"><h3>6. 舘ヶ岡浜</h3><dl><dt>見どころ</dt><dd>夕日の撮影スポット</dd><dt>おすすめ季節</dt><dd>秋・冬</dd><dt>駐車場</dt><dd>あり（要確認）</dd><dt>トイレ</dt><dd>要確認</dd><dt>注意点</dt><dd>冬季は路面凍結に注意</dd></dl></article>
+          <article class="panel beach-card"><h3>7. 浜路浜</h3><dl><dt>見どころ</dt><dd>開放感のある湖畔景観</dd><dt>おすすめ季節</dt><dd>通年</dd><dt>駐車場</dt><dd>要確認</dd><dt>トイレ</dt><dd>要確認</dd><dt>注意点</dt><dd>強風時は水際に近づきすぎない</dd></dl></article>
+        </div>
+      </section>
+
+      <section class="section container" id="eat">
+        <h2>🍽 食べる</h2>
+        <div class="simple-grid">
+          <article class="panel"><h3>湖畔カフェ</h3><p>景色を楽しみながら軽食・スイーツ。</p></article>
+          <article class="panel"><h3>郷土料理</h3><p>地元食材を使った定食やそば。</p></article>
+          <article class="panel"><h3>休憩スポット</h3><p>ドライブ途中に立ち寄れる店舗情報（要拡充）。</p></article>
+        </div>
+      </section>
+
+      <section class="section container" id="shopping">
+        <h2>👜 買う</h2>
+        <div class="simple-grid">
+          <article class="panel"><h3>農産物直売所</h3><p>季節野菜や加工品を販売。</p></article>
+          <article class="panel"><h3>お土産</h3><p>地元銘菓や特産品をチェック。</p></article>
+          <article class="panel"><h3>クラフト</h3><p>地域の手しごと品（要確認）。</p></article>
+        </div>
+      </section>
+
+      <section class="section container" id="toilet-parking">
+        <h2>🚻 トイレ・駐車場（観光者向け一覧）</h2>
+        <p class="section-note">子連れ・高齢者の方が使いやすいよう、バリアフリーや多目的トイレの有無を一覧化しています（未確認項目あり）。</p>
+        <div class="table-wrap panel">
+          <table>
+            <thead>
+              <tr>
+                <th>エリア</th>
+                <th>駐車場</th>
+                <th>トイレ</th>
+                <th>バリアフリー</th>
+                <th>備考</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>舟津浜周辺</td><td>あり（台数 要確認）</td><td>あり（場所 要確認）</td><td>要確認</td><td>繁忙期混雑</td></tr>
+              <tr><td>布引高原周辺</td><td>あり</td><td>あり</td><td>要確認</td><td>天候で視界不良あり</td></tr>
+              <tr><td>白鳥観察エリア</td><td>要確認</td><td>要確認</td><td>要確認</td><td>冬季は防寒必須</td></tr>
+              <tr><td>湖南行政センター近辺</td><td>あり</td><td>あり</td><td>要確認</td><td>休館日 要確認</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section container" id="events">
+        <h2>📅 季節の行事</h2>
+        <div class="simple-grid">
+          <article class="panel"><h3>春</h3><p>桜・新緑・湖畔散策イベント（予定）。</p></article>
+          <article class="panel"><h3>夏</h3><p>ひまわり・高原イベント（予定）。</p></article>
+          <article class="panel"><h3>冬</h3><p>白鳥観察・温泉周遊（予定）。</p></article>
+        </div>
+      </section>
+
+      <section class="section container" id="stay-onsen">
+        <h2>♨ 泊まる・温泉（詳細）</h2>
+        <div class="cards-2">
+          <article class="panel">
+            <h3>湖南町内の宿泊について</h3>
+            <p>湖南町内の宿泊施設は多くないため、<strong>事前予約</strong>を推奨します。最新の営業情報は各施設へ直接ご確認ください。</p>
+            <p class="section-note">宿泊施設情報は随時更新予定（未確認情報あり）。</p>
+          </article>
+          <article class="panel">
+            <h3>磐梯熱海温泉エリアの活用</h3>
+            <p>湖南町観光の前後に、車で約15分の磐梯熱海温泉エリアを組み合わせると、宿泊・入浴の選択肢が広がります。</p>
+          </article>
+        </div>
+
+        <article class="panel model-course">
+          <h3>🚗 日帰りモデルコース：湖南町 + 磐梯熱海温泉</h3>
+          <ol>
+            <li>午前：湖南七浜で湖畔散策</li>
+            <li>昼：湖南エリアで地元ランチ</li>
+            <li>午後：布引高原で景観スポット巡り</li>
+            <li>夕方：磐梯熱海温泉で日帰り入浴</li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="section container" id="news">
+        <h2>📣 お知らせ</h2>
+        <ul class="news-list panel">
+          <li><time datetime="2026-04-15">2026.04.15（サンプル）</time> 湖南七浜ページの仮データを更新しました</li>
+          <li><time datetime="2026-04-08">2026.04.08（サンプル）</time> トイレ・駐車場情報の表示形式を改善しました</li>
+          <li><time datetime="2026-04-01">2026.04.01（サンプル）</time> 泊まる・温泉の案内文を追加しました</li>
+        </ul>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">© 郡山市版 就農入口サイト（プロトタイプ）</div>
-    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

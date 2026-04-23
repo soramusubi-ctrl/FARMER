@@ -1,30 +1,49 @@
-# 郡山市版 就農入口サイト
+# 湖南町観光ガイド（静的サイト）
 
-郡山市で就農を考え始めた人に向けた、静的な入口ポータルサイトです。
-
-## コンセプト
-
-このサイトは「本体」ではなく、入口案内に特化しています。
-
-- 人の魅力：フロンティアファーマーズへ誘導
-- 詳細ステップ：就農ナビアプリへ誘導
-- 最新情報：郡山市農政課公式LINEへ誘導
+猪苗代湖と磐梯山を望む、郡山市湖南町の観光案内を想定した静的サイトです。
 
 ## ページ構成
 
-- `index.html` トップページ
-- `farmers.html` 郡山市ではどんな農家さんがいるの？
-- `steps.html` 就農ステップ
-- `news.html` 最新情報
-- `contact.html` 相談先
+- `index.html` トップページ（観光ガイド）
+- `farmers.html` / `steps.html` / `news.html` / `contact.html` 既存のサブページ
 - `styles.css` 共通スタイル
+- `script.js` 画像アセット定義と初期化（差し替え用）
+- `vercel.json` Vercel向け設定
 
-## 使い方
-
-静的ファイルをそのままWebサーバーで配信できます。ローカル確認は以下。
+## ローカル確認
 
 ```bash
 python3 -m http.server 8000
 ```
 
 `http://localhost:8000` を開いて表示確認してください。
+
+## Vercelデプロイ
+
+このリポジトリはビルド不要の静的配信としてデプロイできます。
+
+### 1) GitHub連携でデプロイ（推奨）
+
+1. Vercel Dashboard で **Add New Project** を選択
+2. このリポジトリを Import
+3. Framework Preset は **Other**（または自動検出）
+4. Build Command は空欄、Output Directory も空欄のままでデプロイ
+
+### 2) CLIでデプロイ
+
+```bash
+npm i -g vercel
+vercel
+vercel --prod
+```
+
+## 補足
+
+- `vercel.json` で `cleanUrls` とセキュリティヘッダを設定しています。
+- トップページの画像はプロトタイプとして外部画像URLを使用しています。運用時は自前アセットへ差し替えを推奨します。
+
+
+## コンテンツ運用メモ
+
+- 画像URLは `script.js` の `IMAGE_ASSETS` に集約しています。将来自前写真に差し替えるときはここを更新してください。
+- 地図エリアは `index.html` の `.map-placeholder` を Google マップ埋め込み `<iframe>` に置き換える設計です。
