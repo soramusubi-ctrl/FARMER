@@ -1,8 +1,8 @@
 const IMAGE_ASSETS = {
-  hero: "assets/images/hero-konan.svg",
+  hero: "assets/images/konan-hero.jpg",
   sunflower: "assets/images/spot-sunflower.svg",
   lakeMountain: "assets/images/spot-lake.svg",
-  swan: "assets/images/spot-swan.svg"
+  swan: "assets/images/konan-swan.jpg"
 };
 
 function hydrateImages() {
